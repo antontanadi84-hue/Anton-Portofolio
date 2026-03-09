@@ -3,39 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's me Antz | Digital Portfolio</title>
+    <title>It's me Antz | Techy Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #0a0a0b; color: #e2e8f0; font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .neon-text { text-shadow: 0 0 10px #00f2fe, 0 0 20px #00f2fe; color: #00f2fe; }
+        /* [BACKGROUND FUTURISTIK] */
+        body { 
+            background: radial-gradient(circle at center, #1a1a2e 0%, #050505 100%);
+            color: #e2e8f0; 
+            font-family: 'Segoe UI', sans-serif;
+            background-attachment: fixed;
+        }
+        /* [BOX KONTEN: Glassmorphism Tipis] */
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
-<body class="p-6 md:p-20">
-    <div class="max-w-4xl mx-auto glass p-8 rounded-3xl shadow-2xl">
-        <header class="mb-12">
-            <h1 class="text-5xl font-bold neon-text mb-2">It's me Antz</h1>
-            <p class="text-xl text-gray-400">IT Specialist | Digital Marketer | XAU/USD Trader</p>
-        </header>
-        
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="glass p-6 rounded-2xl">
-                <h2 class="text-blue-400 font-bold mb-3 uppercase tracking-widest">Tech Stack</h2>
-                <ul class="text-sm space-y-2">
-                    <li>• Systems Administration (Proxmox, Debian)</li>
-                    <li>• Network Infrastructure (MikroTik, VPS)</li>
-                    <li>• AI-Generated Content Creation</li>
-                </ul>
-            </div>
-            <div class="glass p-6 rounded-2xl">
-                <h2 class="text-yellow-400 font-bold mb-3 uppercase tracking-widest">Market Analysis</h2>
-                <p class="text-sm">Fokus pada XAU/USD & BTC/USD menggunakan Liquidation Heatmaps & Fibonacci Retracement.</p>
-            </div>
-        </section>
+<body>
 
-        <footer class="mt-12 text-center text-gray-500 text-xs">
-            &copy; 2026 It's me Antz - Built with Passion on Vercel.
-        </footer>
+======================
+Section 1 Start: Banner (Parallax Animation)
+======================
+<header class="w-full h-80 overflow-hidden relative">
+    <img src="banner.png" alt="Banner" class="w-full h-full object-cover animate-pulse">
+    <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <h1 class="text-5xl font-bold text-white tracking-widest uppercase">It's me Antz</h1>
     </div>
+</header>
+======================
+Section 1 End
+======================
+
+======================
+Section 2 Start: About Me
+======================
+<section class="max-w-6xl mx-auto my-10 p-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="md:col-span-1">
+        <img src="foto.png" alt="Foto Profil" class="rounded-lg w-full border border-white/20">
+    </div>
+    <div class="md:col-span-2 glass p-8 rounded-xl">
+        <h2 class="text-3xl font-bold mb-4">Hi, Nama saya Anton</h2>
+        <p class="text-gray-300">Deskripsi singkat Anda di sini.</p>
+    </div>
+</section>
+======================
+Section 2 End
+======================
+
+======================
+Section 3 Start: My Skills
+======================
+<section class="max-w-6xl mx-auto p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="glass p-6 rounded-xl text-center">Skill 1</div>
+    <div class="glass p-6 rounded-xl text-center">Skill 2</div>
+    <div class="glass p-6 rounded-xl text-center">Skill 3</div>
+</section>
+======================
+Section 3 End
+======================
+
+======================
+Section 4 Start: Portfolio
+======================
+<section class="max-w-6xl mx-auto p-10">
+    <h2 class="text-2xl mb-6 text-center">My Portfolio</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass p-4 rounded-xl"><a href="youtube.com">Video 1</a></div>
+        <div class="glass p-4 rounded-xl"><a href="tiktok.com">Video 2</a></div>
+        <div class="glass p-4 rounded-xl"><a href="tiktok.com">Video 3</a></div>
+    </div>
+</section>
+======================
+Section 4 End
+======================
+
+======================
+Section 5 Start: Latest Updates
+======================
+<section class="max-w-6xl mx-auto p-10 mb-20">
+    <h2 class="text-2xl mb-6 text-center">Latest Updates</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="glass p-6 rounded-xl">Update 1</div>
+        <div class="glass p-6 rounded-xl">Update 2</div>
+        <div class="glass p-6 rounded-xl">Update 3</div>
+    </div>
+</section>
+======================
+Section 5 End
+======================
+
 </body>
 </html>
