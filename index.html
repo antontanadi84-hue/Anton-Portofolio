@@ -9,40 +9,31 @@
         body { 
             background: linear-gradient(135deg, #0f172a 0%, #020617 100%); 
             min-height: 100vh;
-            color: #f8fafc;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .glass-box { 
-            background: rgba(255, 255, 255, 0.05); 
-            backdrop-filter: blur(8px); 
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .link-style {
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 15px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+        }
+        .link-style:hover {
+            background: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
-<body class="p-4 max-w-2xl mx-auto">
+<body>
 
-<header class="relative w-full h-80 overflow-hidden rounded-xl mb-4">
-    <img src="./banner.png" alt="Banner" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex items-center justify-center bg-black/50">
-        <h1 class="text-3xl md:text-6xl font-bold text-white uppercase">It's me Antz</h1>
-    </div>
-</header>
-
-
-    <section class="glass-box p-6 mb-4 rounded-xl">
-        <h2 class="text-xl font-bold uppercase tracking-wider text-cyan-400">About Me</h2>
-        </section>
-
-    <section class="glass-box p-6 mb-4 rounded-xl">
-        <h2 class="text-xl font-bold uppercase tracking-wider text-cyan-400">Tech Stack</h2>
-        </section>
-
-    <section class="glass-box p-6 mb-4 rounded-xl">
-        <h2 class="text-xl font-bold uppercase tracking-wider text-cyan-400">Portfolio</h2>
-        </section>
-
-    <section class="glass-box p-6 mb-4 rounded-xl">
-        <h2 class="text-xl font-bold uppercase tracking-wider text-cyan-400">Latest Updates</h2>
-        </section>
+    <a href="https://www.tiktok.com/@halo.antz" class="link-style">
+        Follow Me on TikTok @halo.antz
+    </a>
 
 </body>
 </html>
